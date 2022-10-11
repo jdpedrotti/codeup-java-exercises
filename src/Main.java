@@ -42,7 +42,12 @@ public class Main {
         System.out.println(y);
 
         int maxInt = Integer.MAX_VALUE;
+        maxInt++;
+        maxInt++;
+        maxInt++;
+
         System.out.println(maxInt);
+
 
 
 
