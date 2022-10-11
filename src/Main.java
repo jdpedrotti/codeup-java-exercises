@@ -37,13 +37,12 @@ public class Main {
 
         int x = 10;
         int y = 2;
-        x /= y;
-        y -= x;
-        System.out.println(x);
 
-        short littleNum = 500;
-        Integer.MAX_VALUE(littleNum);
-        System.out.println(littleNum);
+        y -= (x /= y);
+        System.out.println(y);
+
+        int maxInt = Integer.MAX_VALUE;
+        System.out.println(maxInt);
 
 
 
