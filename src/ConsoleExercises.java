@@ -12,17 +12,16 @@ public class ConsoleExercises {
         System.out.printf("Your number was: %d%n", userNumber);
 
 
-        System.out.println("Enter a word: ");
+        System.out.println("Enter three words: ");
 //        String ghost = scanner.nextLine();
-        String firstWord = scanner.next() + scanner.nextLine();
-        System.out.printf("Your word was %s.%n", firstWord);
-        System.out.println("Enter second word: ");
-        String secondWord = scanner.nextLine();
-        System.out.printf("Your second word was %s.%n", secondWord);
-        System.out.println("Enter third word: ");
-        String thirdWord = scanner.nextLine();
-        System.out.printf("Your third word was %s.%n", thirdWord);
+        String firstWord = scanner.next();
+        String secondWord = scanner.next();
+        String thirdWord = scanner.next();
+        System.out.printf("Your three words were: %s%n%s%n%s%n", firstWord, secondWord, thirdWord);
 
+        System.out.println("Enter a sentence: ");
+        String sentence = scanner.nextLine();
+        System.out.printf("Sentence: %s", sentence);
 
         System.out.println("Enter the length: ");
         int roomLength = Integer.parseInt(scanner.nextLine());
