@@ -14,10 +14,19 @@ public class consoleIOLecture {
 //        System.out.printf("The number is %-11.3f%n", someNumber);
 
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+//        int userNumber = Integer.parseInt(scanner.nextLine());
+        int userNumber = scanner.nextInt();
+        System.out.printf("Your number was: %d%n", userNumber);
+
 //        System.out.println("Enter a word: ");
         System.out.println("Enter a sentence: ");
-        String userInput = scanner.nextLine();
+//        String ghost = scanner.nextLine();
+        String userInput = scanner.next() + scanner.nextLine();
         System.out.printf("Your sentence was %s.%n", userInput);
+        System.out.println("Enter another sentence: ");
+        String secondSentence = scanner.nextLine();
+        System.out.printf("Your second sentence was %s.%n", secondSentence);
 
     }
 }
