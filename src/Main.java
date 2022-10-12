@@ -41,9 +41,7 @@ public class Main {
         y -= (x /= y);
         System.out.println(y);
 
-        int maxInt = Integer.MAX_VALUE;
-        maxInt++;
-        maxInt++;
+        long maxInt = 2147483647L;
         maxInt++;
 
         System.out.println(maxInt);
