@@ -62,11 +62,11 @@ public class ControlStatementsLecture {
 
         int i =1;
         System.out.println("The loop hasnt started yet. the value of i is " + i);
-//        while (i < 10) {
-//            System.out.println("Now im in the loop. i has not incremented yet and its value is " + i);
-//            i++;
-//            System.out.println("Im still in the loop. i has incremented and its value is " + i);
-//        }
+        while (i < 10) {
+            System.out.println("Now im in the loop. i has not incremented yet and its value is " + i);
+            i++;
+            System.out.println("Im still in the loop. i has incremented and its value is " + i);
+        }
 
 //        do {
 //            System.out.println("Now im in the loop. i has not incremented yet and its value is " + i);
