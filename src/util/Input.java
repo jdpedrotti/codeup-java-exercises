@@ -1,6 +1,7 @@
 package util;
 
 
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Input {
@@ -19,25 +20,52 @@ public class Input {
         return scanner.nextLine();
     }
 
+    public boolean yesNo() {
+        System.out.println("yes or no: ");
+        String userInput = scanner.nextLine().toLowerCase();
+        if (userInput.equals("yes") || userInput.equals("y")) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
+    public int getInt(int min, int max){
+        Scanner scanner = new Scanner(System.in);
+        System.out.printf("Enter an integer between %d and %d:%n",min,max);
+        int userInput = scanner.nextInt();
+        if (userInput >= min && userInput <= max) {
+            System.out.printf("You entered %d%n which is within the range!", userInput);
+            return userInput;
+        } else {
+            System.out.printf("You entered %d, which is out of the range", userInput);
+        }
+
+        return getInt(22,44);
+    }
+
+    public double getDouble(double min2, double max2){
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.printf("Enter a decimal number between %s and %s:%n",min2,max2);
+        double userInput2 = scanner.nextDouble();
+        if (userInput2 >= min2 && userInput2 <= max2) {
+            System.out.printf("You entered %s%n which is within the range!", userInput2);
+            return userInput2;
+        } else {
+            System.out.printf("You entered %s, which is out of the range%n", userInput2);
+        }
+
+        return getDouble(1,10);
+    }
     public Input (){
         scanner = new Scanner(System.in);
     }
 
 
-//    public static String getString(){
-//        String string = scanner.nextLine();
-//        System.out.println(string);
-//        return getString();
-//    }
 
-//    public boolean yesNo(){
 //
-//    }
-//
-//    public int getInt(int min, int max){
-//
-//    }
+
 //
 //    public int getInt(){
 //
