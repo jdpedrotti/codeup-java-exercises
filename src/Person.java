@@ -17,6 +17,8 @@ public class Person {
         // constructor
 
     }
+
+    public Person(){}
     public Person(String name){
         this.name = name;
     }

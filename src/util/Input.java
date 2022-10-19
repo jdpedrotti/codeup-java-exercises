@@ -20,6 +20,11 @@ public class Input {
         return scanner.nextLine();
     }
 
+    public String getString(String prompt){
+        System.out.println(prompt);
+        return scanner.nextLine();
+    }
+
     public boolean yesNo() {
         System.out.println("yes or no: ");
         String userInput = scanner.nextLine().toLowerCase();
@@ -30,20 +35,31 @@ public class Input {
         }
     }
 
+
+    public int getInt(){
+        System.out.println("Enter an integer: ");
+        return scanner.nextInt();
+    }
     public int getInt(int min, int max){
         Scanner scanner = new Scanner(System.in);
         System.out.printf("Enter an integer between %d and %d:%n",min,max);
         int userInput = scanner.nextInt();
         if (userInput >= min && userInput <= max) {
-            System.out.printf("You entered %d%n which is within the range!", userInput);
+            System.out.printf("You entered %d which is within the range!%n", userInput);
             return userInput;
         } else {
             System.out.printf("You entered %d, which is out of the range", userInput);
         }
 
-        return getInt(22,44);
+        return userInput;
     }
 
+
+
+    public double getDouble(String prompt){
+        System.out.println(prompt);
+        return scanner.nextDouble();
+    }
     public double getDouble(double min2, double max2){
         Scanner scanner = new Scanner(System.in);
 
@@ -56,7 +72,7 @@ public class Input {
             System.out.printf("You entered %s, which is out of the range%n", userInput2);
         }
 
-        return getDouble(1,10);
+        return userInput2;
     }
     public Input (){
         scanner = new Scanner(System.in);
