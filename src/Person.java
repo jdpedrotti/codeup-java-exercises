@@ -17,7 +17,9 @@ public class Person {
         // constructor
 
     }
-
+    public String toString(){
+        return name;
+    }
     public Person(){}
     public Person(String name){
         this.name = name;
