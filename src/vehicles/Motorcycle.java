@@ -5,4 +5,9 @@ public class Motorcycle extends Vehicle {
         System.out.println("Braaaaap");
     }
 
+    public void breakDown(){
+        super.makeNoise();
+        System.out.println("krrrrclunck");
+    }
+
 }

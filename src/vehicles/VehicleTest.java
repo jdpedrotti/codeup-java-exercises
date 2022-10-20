@@ -12,6 +12,8 @@ public class VehicleTest {
         dirtbike.setName("Kawasaki");
         System.out.print(dirtbike.getName() + " goes ");
         dirtbike.makeNoise();
+        dirtbike.breakDown();
+
     }
 
 
