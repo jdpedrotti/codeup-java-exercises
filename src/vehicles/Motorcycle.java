@@ -10,4 +10,10 @@ public class Motorcycle extends Vehicle {
         System.out.println("krrrrclunck");
     }
 
+    public Motorcycle(){}
+
+    public Motorcycle(String name){
+        this.setName(name);
+    }
+
 }

@@ -15,7 +15,17 @@ public class Vehicle {
         System.out.println("Vroom vroom");
     }
 
-    public Vehicle() {
+
+    public void alarm(){
+        System.out.println("whooo whoo whoo");
+    }
+
+    public Vehicle(){};
+    public Vehicle(String name){
         this.name = name;
     }
+
+
+
+
 }
