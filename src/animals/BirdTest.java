@@ -50,6 +50,7 @@ public class BirdTest {
         parrot.setName("Polly");
         System.out.println(parrot.name);
         System.out.println(Parrot.order);
+        parrot.beCute();
 
 //        System.out.println(argumentativeOrnithologist("Psittaciformes", "Sphenisciformes"));
 

@@ -1,6 +1,6 @@
 package animals;
 
-public class Parrot extends Bird {
+public class Parrot extends Bird implements Pet {
 
     public final static String order = "Psittaciformes";
     public void setName(String parrotName){
@@ -16,6 +16,9 @@ public class Parrot extends Bird {
         System.out.println(input);
     }
 
+    public void beCute(){
+        System.out.println("Human goes awww");
+    }
     public Parrot(){
         super(); //means run the superclass constructor (ie Bird), happens by default anyway
         System.out.println("A new Parrot just got constructed");
