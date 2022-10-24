@@ -13,13 +13,15 @@ public class ShapesTest {
 //
 //
 
-        Quadrilateral square = new Square(5, 5);
-        System.out.println(square.getPerimeter());
-        System.out.println(square.getArea());
+        Measurable myShape;
 
-        Quadrilateral rectangle = new Rectangle(8,5);
-        System.out.println(rectangle.getPerimeter());
-        System.out.println(rectangle.getArea());
+        myShape = new Square(5);
+        System.out.println(myShape.getPerimeter());
+        System.out.println(myShape.getArea());
+
+        myShape = new Rectangle(8,5);
+        System.out.println(myShape.getPerimeter());
+        System.out.println(myShape.getArea());
 
 
     }
