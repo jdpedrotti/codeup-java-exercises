@@ -25,6 +25,7 @@ public class Input {
         return scanner.nextLine();
     }
 
+
     public boolean yesNo() {
         System.out.println("yes or no: ");
         String userInput = scanner.nextLine().toLowerCase();
