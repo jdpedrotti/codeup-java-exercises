@@ -38,13 +38,15 @@ public class Input {
 
 
     public int getInt(){
-        System.out.println("Enter an integer: ");
+//        System.out.println("Enter an integer: ");
         return scanner.nextInt();
+//        return Integer.valueOf(getString());
     }
     public int getInt(int min, int max){
         Scanner scanner = new Scanner(System.in);
         System.out.printf("Enter an integer between %d and %d:%n",min,max);
         int userInput = scanner.nextInt();
+
         if (userInput >= min && userInput <= max) {
             System.out.printf("You entered %d which is within the range!%n", userInput);
             return userInput;
@@ -59,13 +61,15 @@ public class Input {
 
     public double getDouble(String prompt){
         System.out.println(prompt);
-        return scanner.nextDouble();
+//        return scanner.nextDouble();
+        return Double.valueOf(getString());
     }
     public double getDouble(double min2, double max2){
         Scanner scanner = new Scanner(System.in);
 
         System.out.printf("Enter a decimal number between %s and %s:%n",min2,max2);
         double userInput2 = scanner.nextDouble();
+
         if (userInput2 >= min2 && userInput2 <= max2) {
             System.out.printf("You entered %s%n which is within the range!", userInput2);
             return userInput2;
