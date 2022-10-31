@@ -21,7 +21,7 @@ public class FileIoPractice {
 
         List<String> newNames = Arrays.asList("Stephen", "Frances", "Rodrigo", "Rich");
         try {
-            Files.write(p, newNames);
+            Files.write(p, newNames, StandardOpenOption.APPEND);
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -109,9 +109,9 @@ public class FileIOLecture {
 
         // ============================ WRITING FILES
 
-//        Path p = Paths.get("src", "test.txt");
+        Path p = Paths.get("src", "test.txt");
 //
-//        List<String> newNames = Arrays.asList("John", "Fred", "Cathy");
+//        List<String> newNames = Arrays.asList("John", "Fred", "Cathy" );
 //        try {
 //            Files.write(p, newNames, StandardOpenOption.APPEND);
 //        } catch (IOException e) {
@@ -122,16 +122,16 @@ public class FileIOLecture {
 
 
 
-//        List<String> names = new ArrayList<>();
-//        names.add("Tim");
-//        names.add("Sally");
-//        names.add("Mary");
-//
-//        try {
-//            Files.write(p, names, StandardOpenOption.APPEND);
-//        } catch(IOException e) {
-//            e.printStackTrace();
-//        }
+        List<String> names = new ArrayList<>();
+        names.add("Tim");
+        names.add("Sally");
+        names.add("Mary");
+
+        try {
+            Files.write(p, names, StandardOpenOption.APPEND);
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
 
 
     }
